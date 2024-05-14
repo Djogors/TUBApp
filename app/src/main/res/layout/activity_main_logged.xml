@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundStandard">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:id="@+id/grid_main"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+        <EditText
+            android:id="@+id/Destino_menu"
+            android:layout_width="307dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/rounded_input"
+            android:ems="10"
+            android:hint="Where do want go?"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#938F8F"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="33dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_searchtub" />
+
+        <TextView
+            android:id="@+id/brt_service_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"
+            android:text="BRT services"
+            android:textStyle="bold"
+            />
+
+        <GridLayout
+            android:layout_width="383dp"
+            android:layout_height="474dp"
+            android:layout_below="@+id/grid_main"
+            android:background="@color/backgroundStandard"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="25dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundStandard"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/menu_tickets_img"
+                        android:layout_width="181dp"
+                        android:layout_height="318dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ticket_menu_main_img" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundStandard"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/menu_pass_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="335dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tub_pass_main_menu_image" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundStandard"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/menu_rotasv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/route_main_menu_img" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/backgroundStandard"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="148dp"
+                        android:layout_height="194dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="675dp"
+            android:layout_marginStart="350dp"
+            android:background="@drawable/rectangle_rate_star"
+            />
+        <ImageView
+            android:id="@+id/rate_us_id"
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="675dp"
+            android:layout_marginStart="355dp"
+            app:srcCompat="@drawable/rate_star"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="363dp"
+            android:layout_marginTop="710dp"
+            android:textSize="12sp"
+            android:text="Rate us"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

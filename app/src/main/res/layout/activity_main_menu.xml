@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonColorStandard"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/header" />
+    <RelativeLayout
+        android:background="@color/backgroundStandard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brt_service"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="290dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/useful_service"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+        <ImageView
+            android:id="@+id/rectangle_directions"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/white_rectangle"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/route_icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="345dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/directions"
+            android:textColor="@color/buttonColorStandard"
+            android:textStyle="bold"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="80dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/want_to_go_to_a_specific_destination_nwe_help"
+            android:textColor="@color/black"
+            android:layout_marginTop="360dp"
+            android:layout_marginStart="80dp"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/profile_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/white_rectangle"
+            android:layout_below="@+id/rectangle_directions"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/buttonColorStandard"
+            android:textStyle="bold"
+            android:layout_marginTop="440dp"
+            android:layout_marginStart="80dp"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/person_icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="445dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_your_profile_check_fines_nand_more"
+            android:textColor="@color/black"
+            android:layout_marginTop="460dp"
+            android:layout_marginStart="80dp"
+            android:textSize="15sp"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/srbox"
+                    android:layout_width="160dp"
+                    android:layout_height="230dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/route_main_menu_img" />
+
+                <ImageView
+                    android:id="@+id/tickets"
+                    android:layout_width="160dp"
+                    android:layout_height="230dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ticket_menu_main_img" />
+
+                <ImageView
+                    android:id="@+id/tubpass"
+                    android:layout_width="160dp"
+                    android:layout_height="230dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/tub_pass_main_menu_image" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

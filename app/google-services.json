@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "29698149402",
+    "project_id": "brt-app-c5883",
+    "storage_bucket": "brt-app-c5883.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29698149402:android:519a37580ecfa8c41cd5a3",
+        "android_client_info": {
+          "package_name": "com.example.brtapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUcEGdSWKg9N3Ffeii_ielQ6KGFOXIDgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
